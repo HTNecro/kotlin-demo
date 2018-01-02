@@ -1,0 +1,20 @@
+package org.kotliner.demo.coroutines
+
+import kotlinx.coroutines.experimental.delay
+import kotlinx.coroutines.experimental.launch
+import kotlinx.coroutines.experimental.runBlocking
+
+/**
+ * @author Haitao.Wu (HTNecro@gmail.com)
+ */
+fun main(args: Array<String>) = runBlocking {
+    val jobs = List(100_000) {
+        // launch a lot of coroutines and list their jobs
+        launch {
+            delay(1000L)
+            print(".")
+            println(Thread.currentThread().name)
+        }
+    }
+    jobs.forEach { it.join() } // wait for all jobs to complete
+}
