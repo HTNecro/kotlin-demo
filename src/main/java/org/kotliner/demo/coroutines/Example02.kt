@@ -4,9 +4,6 @@ import kotlinx.coroutines.experimental.delay
 import kotlinx.coroutines.experimental.launch
 import kotlinx.coroutines.experimental.runBlocking
 
-/**
- * @author Haitao.Wu (HTNecro@gmail.com)
- */
 fun main(args: Array<String>) = runBlocking {
     val jobs = List(100_000) {
         // launch a lot of coroutines and list their jobs
