@@ -8,11 +8,15 @@ public class JavaNullSafety {
 
     public static String getNotNullString() { return "Hello, Kotlin"; }
 
+    public static Optional<String> getString() {
+        return Optional.ofNullable(getNullableString());
+    }
+
     public static void main(String[] args) {
         String result = getNullableString();
         System.out.println(result.length());
 
-        Optional<String> nullable = Optional.ofNullable(getNullableString());
+        Optional<String> nullable = getString();
 
         if (nullable.isPresent()) {
             result = nullable.get();
