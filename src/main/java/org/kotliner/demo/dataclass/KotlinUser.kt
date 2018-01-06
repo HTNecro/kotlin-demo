@@ -15,4 +15,8 @@ fun main(args: Array<String>) {
     val user = KotlinUser("Haitao", 18, Gender.MALE)
     println("Current User is $user")
     println("Current User age is ${user.age}")
+
+    val (name , age , _) = user
+    println(name)
+    println(age)
 }
