@@ -10,7 +10,6 @@ fun main(args: Array<String>) = runBlocking {
         launch {
             delay(1000L)
             print(".")
-            println(Thread.currentThread().name)
         }
     }
     jobs.forEach { it.join() } // wait for all jobs to complete
