@@ -17,7 +17,10 @@ fun main(args: Array<String>) {
     println(list.last())
     println(list.slice(0..2))
 
-    val group = list.filter { it -> it.age >= 18 }.groupBy(KotlinUser::gender)
+    println(list.none { it.age > 18 })
+    println(list.any { it.age > 18 })
+
+    val group = list.filter { it.age >= 18 }.groupBy(KotlinUser::gender)
     println(group[Gender.FEMALE])
     println(group[Gender.MALE])
 
@@ -25,6 +28,7 @@ fun main(args: Array<String>) {
     println(totalAge)
 
     val mutable = (1..10).toMutableList()
+    println(mutable.requireNoNulls())
     mutable.add(100)
     mutable.remove(2)
     println(mutable)
