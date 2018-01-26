@@ -14,7 +14,9 @@ fun main(args: Array<String>) {
     // list.add(KotlinUser("6", 40)) // compile fail
 
     println(list.first())
+    println(list.firstOrNull())
     println(list.last())
+    println(list.lastOrNull())
     println(list.slice(0..2))
 
     println(list.none { it.age > 18 })
