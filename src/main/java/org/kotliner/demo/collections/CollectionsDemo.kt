@@ -35,6 +35,14 @@ fun main(args: Array<String>) {
     mutable.remove(2)
     println(mutable)
 
-    val map = hashMapOf("1" to 1, "2" to 2)
-    println(map["2"])
+
+    val map = mapOf("1" to 1, "2" to 2)
+//    map["3"] = 3
+    println(map)
+
+    val hashMap = hashMapOf("1" to 1, "2" to 2)
+    hashMap["3"] = 3
+    hashMap.remove("1")
+    println(hashMap["2"])
+    println(hashMap["3"])
 }
