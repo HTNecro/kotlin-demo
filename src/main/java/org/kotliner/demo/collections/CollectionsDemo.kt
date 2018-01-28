@@ -36,6 +36,16 @@ fun main(args: Array<String>) {
     println(mutable)
 
 
+    val set = setOf(1, 2, 3, 4, 3, 4)
+//    set.add(5)
+    println(set)
+
+    val hashSet = hashSetOf(1, 2, 3, 4, 3, 4)
+    hashSet.add(2)
+    hashSet.add(5)
+    hashSet.remove(1)
+    println(hashSet)
+
     val map = mapOf("1" to 1, "2" to 2)
 //    map["3"] = 3
     println(map)
