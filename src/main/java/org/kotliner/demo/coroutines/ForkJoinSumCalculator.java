@@ -4,9 +4,6 @@ import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.RecursiveTask;
 import java.util.stream.LongStream;
 
-/**
- * @author Haitao.Wu (HTNecro@gmail.com)
- */
 public class ForkJoinSumCalculator extends RecursiveTask<Long> {
 
     private final long[] numbers;

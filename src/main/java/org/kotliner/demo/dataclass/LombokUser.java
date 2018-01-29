@@ -2,9 +2,6 @@ package org.kotliner.demo.dataclass;
 
 import lombok.Data;
 
-/**
- * @author Haitao.Wu (HTNecro@gmail.com)
- */
 @Data
 public class LombokUser {
 

@@ -4,9 +4,6 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.ToString;
 
-/**
- * @author Haitao.Wu (HTNecro@gmail.com)
- */
 @Getter
 @ToString
 @Builder
