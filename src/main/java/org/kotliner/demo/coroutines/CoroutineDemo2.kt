@@ -9,11 +9,13 @@ suspend fun fetchData(): String {
 }
 
 suspend fun parseData(originData: String): String {
+    println(originData)
     delay(1000L)// parse data
     return ""
 }
 
 suspend fun saveData(data: String) {
+    println(data)
     delay(100L)// save data
 }
 
