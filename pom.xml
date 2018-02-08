@@ -15,8 +15,7 @@
         <java.version>1.8</java.version>
         <kotlin.version>1.2.21</kotlin.version>
         <kotlin.coroutines.version>0.22.1</kotlin.coroutines.version>
-        <spring.boot.version>1.5.10.RELEASE</spring.boot.version>
-        <spring.boot2.version>2.0.0.RC1</spring.boot2.version>
+        <spring.boot.version>2.0.0.RC1</spring.boot.version>
         <jackson.version>2.9.4</jackson.version>
     </properties>
 
@@ -55,7 +54,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-            <version>${spring.boot2.version}</version>
+            <version>${spring.boot.version}</version>
             <exclusions>
                 <exclusion>
                     <groupId>org.springframework.boot</groupId>
@@ -145,7 +144,7 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>${spring.boot.version}</version>
+                <version>1.5.10.RELEASE</version>
                 <executions>
                     <execution>
                         <goals>
