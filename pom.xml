@@ -13,10 +13,11 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
-        <kotlin.version>1.2.20</kotlin.version>
-        <kotlin.coroutines.version>0.20</kotlin.coroutines.version>
-        <spring.boot.version>1.5.9.RELEASE</spring.boot.version>
-        <jackson.version>2.9.2</jackson.version>
+        <kotlin.version>1.2.21</kotlin.version>
+        <kotlin.coroutines.version>0.22.1</kotlin.coroutines.version>
+        <spring.boot.version>1.5.10.RELEASE</spring.boot.version>
+        <spring.boot2.version>2.0.0.RC1</spring.boot2.version>
+        <jackson.version>2.9.4</jackson.version>
     </properties>
 
     <dependencies>
@@ -54,7 +55,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-            <version>2.0.0.M7</version>
+            <version>${spring.boot2.version}</version>
             <exclusions>
                 <exclusion>
                     <groupId>org.springframework.boot</groupId>
@@ -65,7 +66,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-jetty</artifactId>
-            <version>2.0.0.M7</version>
+            <version>${spring.boot.version}</version>
         </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
