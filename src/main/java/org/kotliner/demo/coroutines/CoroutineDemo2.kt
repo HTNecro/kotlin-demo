@@ -1,7 +1,8 @@
 package org.kotliner.demo.coroutines
 
-import kotlinx.coroutines.experimental.delay
-import kotlinx.coroutines.experimental.launch
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 
 suspend fun fetchData(): String {
     delay(1000L)// fetch data from remote
@@ -19,8 +20,8 @@ suspend fun saveData(data: String) {
     delay(100L)// save data
 }
 
-fun main(args: Array<String>) {
-    launch {
+fun main() {
+    GlobalScope.launch {
         val originData = fetchData()
         val data = parseData(originData)
         saveData(data)

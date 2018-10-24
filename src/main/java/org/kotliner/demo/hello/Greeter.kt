@@ -1,12 +1,12 @@
 package org.kotliner.demo.hello
 
-class Greeter(val name: String) {
+class Greeter(private val name: String) {
     fun greet() {
         println("Hello, $name")
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val name = "Kotlin"
     Greeter(name).greet()
 }

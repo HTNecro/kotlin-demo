@@ -1,10 +1,11 @@
 package org.kotliner.demo.coroutines
 
-import kotlinx.coroutines.experimental.delay
-import kotlinx.coroutines.experimental.launch
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 
-fun main(args: Array<String>) {
-    launch {
+fun main() {
+    GlobalScope.launch {
         // launch new coroutine in background and continue
         delay(1000L)
         println("World!")

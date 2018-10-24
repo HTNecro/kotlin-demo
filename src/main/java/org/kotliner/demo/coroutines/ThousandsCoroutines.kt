@@ -1,10 +1,10 @@
 package org.kotliner.demo.coroutines
 
-import kotlinx.coroutines.experimental.delay
-import kotlinx.coroutines.experimental.launch
-import kotlinx.coroutines.experimental.runBlocking
+import kotlinx.coroutines.coroutineScope
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 
-fun main(args: Array<String>) = runBlocking {
+suspend fun main() = coroutineScope {
     val jobs = List(100_000) {
         // launch a lot of coroutines and list their jobs
         launch {

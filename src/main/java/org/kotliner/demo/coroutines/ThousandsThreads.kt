@@ -2,7 +2,7 @@ package org.kotliner.demo.coroutines
 
 import kotlin.concurrent.thread
 
-fun main(args: Array<String>) {
+fun main() {
     val jobs = List(100_000) {
         thread {
             Thread.sleep(1000L)

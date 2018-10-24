@@ -1,8 +1,7 @@
 package org.kotliner.demo.coroutines
 
-import kotlin.coroutines.experimental.buildSequence
 
-val fibonacci = buildSequence {
+val fibonacci = sequence {
     yield(1)
     var cur = 1
     var next = 1
@@ -14,6 +13,6 @@ val fibonacci = buildSequence {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(fibonacci.take(10).joinToString())
 }
