@@ -13,8 +13,8 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
-        <kotlin.version>1.3.0-rc-190</kotlin.version>
-        <kotlin.coroutines.version>1.0.0-RC1</kotlin.coroutines.version>
+        <kotlin.version>1.3.0</kotlin.version>
+        <kotlin.coroutines.version>1.0.0</kotlin.coroutines.version>
         <spring.boot.version>2.0.6.RELEASE</spring.boot.version>
     </properties>
 
@@ -39,6 +39,11 @@
         <dependency>
             <groupId>org.jetbrains.kotlin</groupId>
             <artifactId>kotlin-stdlib-jdk8</artifactId>
+            <version>${kotlin.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jetbrains.kotlin</groupId>
+            <artifactId>kotlin-stdlib-jdk7</artifactId>
             <version>${kotlin.version}</version>
         </dependency>
         <dependency>
@@ -77,13 +82,6 @@
         </dependency>
     </dependencies>
 
-    <repositories>
-        <repository>
-            <id>kotlin-eap</id>
-            <url>https://dl.bintray.com/kotlin/kotlin-eap</url>
-        </repository>
-    </repositories>
-
     <build>
         <plugins>
             <plugin>
@@ -114,7 +112,6 @@
                         <plugin>spring</plugin>
                     </compilerPlugins>
                     <jvmTarget>${java.version}</jvmTarget>
-                    <experimentalCoroutines>enable</experimentalCoroutines>
                 </configuration>
                 <dependencies>
                     <dependency>
@@ -166,12 +163,5 @@
             </plugin>
         </plugins>
     </build>
-
-    <pluginRepositories>
-        <pluginRepository>
-            <id>kotlin-plugin-eap</id>
-            <url>https://dl.bintray.com/kotlin/kotlin-eap</url>
-        </pluginRepository>
-    </pluginRepositories>
 
 </project>
