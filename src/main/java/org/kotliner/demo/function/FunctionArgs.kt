@@ -5,7 +5,7 @@ fun pagingList(param: String, pageNo: Int = 1, pageSize: Int = 10): List<Any> {
     return emptyList()
 }
 
-fun main(args: Array<String>) {
+fun main() {
     pagingList("parameters")
     pagingList("parameters", 2, 20)
     pagingList("parameters", pageNo = 2)

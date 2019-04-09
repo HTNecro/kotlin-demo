@@ -4,7 +4,7 @@ infix fun String.find(x: Int): Char {
     return this[x]
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val c = "Hello World" find 2
     println(c)
 }

@@ -17,7 +17,7 @@ class TypeB : TypeA() {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val type: TypeA = TypeB()
     // type.printB()
     if (type is TypeB) {

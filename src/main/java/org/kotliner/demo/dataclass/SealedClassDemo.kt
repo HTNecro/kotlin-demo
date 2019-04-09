@@ -12,7 +12,7 @@ fun eval(expr: Expr): Double = when (expr) {
     NotANumber -> Double.NaN
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val expr = Sum(Const(1.0), Const(2.0))
     println(eval(expr))
 }

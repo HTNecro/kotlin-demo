@@ -16,7 +16,7 @@ fun doSomeThings(): String {
     return "Kotlin lambda"
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val l = ReentrantLock()
 
     lock(l, ::doSomeThings)

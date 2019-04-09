@@ -4,7 +4,7 @@ import org.kotliner.demo.dataclass.Gender
 import org.kotliner.demo.dataclass.KotlinUser
 import kotlin.reflect.full.memberProperties
 
-fun main(args: Array<String>) {
+fun main() {
     val user = KotlinUser("Haitao", 18, Gender.MALE)
     val kClass = user.javaClass.kotlin
     println(kClass.simpleName)

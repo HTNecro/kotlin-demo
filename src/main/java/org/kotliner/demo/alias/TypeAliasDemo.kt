@@ -10,7 +10,7 @@ typealias Predicate<T> = (T) -> Boolean
 
 fun foo(p: Predicate<Int>) = p(42)
 
-fun main(args: Array<String>) {
+fun main() {
     val list: IntList = listOf(1, 2, 3)
     printFirst(list)
 

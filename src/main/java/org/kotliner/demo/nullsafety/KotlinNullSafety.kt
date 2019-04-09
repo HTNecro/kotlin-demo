@@ -17,7 +17,7 @@ fun printNotNullString(value: String) {
 }
 
 
-fun main(args: Array<String>) {
+fun main() {
     val nullable = getNullableString()
 
     // println(nullable.length) //编译错误

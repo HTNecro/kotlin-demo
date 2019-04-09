@@ -19,7 +19,7 @@ class Derived(b: Base) : Base by b {
 }
 
 
-fun main(args: Array<String>) {
+fun main() {
     val b = BaseImpl(10)
     Derived(b).delegate()
 }

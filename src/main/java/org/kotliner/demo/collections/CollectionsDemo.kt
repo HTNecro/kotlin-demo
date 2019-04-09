@@ -3,13 +3,13 @@ package org.kotliner.demo.collections
 import org.kotliner.demo.dataclass.Gender
 import org.kotliner.demo.dataclass.KotlinUser
 
-fun main(args: Array<String>) {
+fun main() {
     val list = listOf(
-            KotlinUser("1", 16, Gender.FEMALE),
-            KotlinUser("2", 17, Gender.MALE),
-            KotlinUser("3", 18, Gender.FEMALE),
-            KotlinUser("4", 21, Gender.MALE),
-            KotlinUser("5", 30, Gender.FEMALE)
+        KotlinUser("1", 16, Gender.FEMALE),
+        KotlinUser("2", 17, Gender.MALE),
+        KotlinUser("3", 18, Gender.FEMALE),
+        KotlinUser("4", 21, Gender.MALE),
+        KotlinUser("5", 30, Gender.FEMALE)
     )
     // list.add(KotlinUser("6", 40)) // compile fail
 

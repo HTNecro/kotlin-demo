@@ -4,7 +4,7 @@ import org.kotliner.demo.nullsafety.getNullableString
 
 fun String?.isNotEmpty() = this != null && this != ""
 
-fun main(args: Array<String>) {
+fun main() {
     val s = getNullableString()
     if (s.isNotEmpty()) {
         println("String: $s")

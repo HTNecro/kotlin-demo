@@ -18,7 +18,7 @@ operator fun Point.dec(): Point {
     return Point(this.x - 1, this.y - 1)
 }
 
-fun main(args: Array<String>) {
+fun main() {
     var a = Point(1, 3)
     var b = Point(1, 3)
     println(a + b)
